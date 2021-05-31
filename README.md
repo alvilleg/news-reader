@@ -12,6 +12,6 @@ java -jar app/build/libs/app.jar <news url>
 
 Example:
 ```shell
-https://syndicator.univision.com/web-api/content\?url\=https://www.univision.com/noticias\&lazyload\=false
+java -jar app/build/libs/app.jar https://syndicator.univision.com/web-api/content\?url\=https://www.univision.com/noticias\&lazyload\=false
 ```
 
