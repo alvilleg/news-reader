@@ -21,6 +21,6 @@ public class PrintImpl implements Printer {
     private void printByType(Map.Entry<String, List<Content>> stringListEntry) {
         output.write(String.format("%s (%s)", stringListEntry.getKey(), stringListEntry.getValue().size()));
         stringListEntry.getValue().stream().forEach(l -> output.write(l.getTitle()));
-        output.write("------------------------");
+        output.write("-----------------");
     }
 }
