@@ -20,7 +20,6 @@ public class App {
         Printer printer = new PrintImpl(new Output() {
             @Override
             public void init() {
-
             }
 
             @Override
@@ -30,7 +29,6 @@ public class App {
 
             @Override
             public void close() {
-
             }
         });
         printer.print(widgetSummaryList);

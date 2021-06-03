@@ -1,5 +1,7 @@
 ### News Reader
 
+Make sure you are using Java 11
+
 To compile
 ```shell
 ./gradlew clean build

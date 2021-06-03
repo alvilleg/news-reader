@@ -46,7 +46,7 @@ public class ReaderImpl implements Reader {
             throw new IllegalArgumentException();
         }
         List<Map<String, Object>> widgets = (List) map.get("data").get("widgets");
-        for (Map w : widgets) {
+        for (var w : widgets) {
             readContents(w, contentList);
         }
     }
@@ -56,7 +56,7 @@ public class ReaderImpl implements Reader {
             throw new IllegalArgumentException();
         }
         List<Map<String, Object>> contents = (List) w.get("contents");
-        for (Map c : contents) {
+        for (var c : contents) {
             Content content = Content.builder().type(String.valueOf(c.get("type"))).
                     title(String.valueOf(c.get("title"))).build();
             contentList.add(content);
